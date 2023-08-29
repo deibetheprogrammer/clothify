@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Dubai";
+  src: url("../fonts/Dubai/DubaiW23-Bold.ttf") format("truetype"),
+	  url("../fonts/Dubai/DubaiW23-Medium.ttf")  format("truetype"),
+	  url("../fonts/Dubai/DubaiW23-Light.ttf") format("truetype"),
+	  url("../fonts/Dubai/DubaiW23-Regular.ttf") format("truetype");
+	  
+}
+
+header {
+	padding-top: 0.5em;
+}
+
+header a{
+	color: black;
+}
+
+header i{
+	font-size: 2em;
+}
+
+footer {
+	 position: fixed;
+  	bottom: 0;
+  	width: 100%;
+	font-family: "Dubai";
+	font-weight: 100;
+	background-color: black;
+  text-align: center;
+  font-size: 0.7em;
+}
+footer i {
+  padding-top: 0.5em;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+footer p {
+  margin-bottom: 0.5em;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+}
+
+footer .col-3{
+	background-color: black;
+}
