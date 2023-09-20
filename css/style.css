@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+
+/* GENRERAL */
+
 @font-face {
   font-family: "Dubai";
   src: url("../fonts/Dubai/DubaiW23-Bold.ttf") format("truetype"),
@@ -6,6 +12,33 @@
 	  url("../fonts/Dubai/DubaiW23-Regular.ttf") format("truetype");
 	  
 }
+
+:root {
+	--color-primario1: #0E131F;
+	--color-primario2: #F96E46;
+	--color-secundario1: #AFBBF2;
+	--color-secundario2: #FCBFAD;
+	--color-secundario3: #006992;
+	--color-input: #ACD4E3;
+	--color-blanco: #FFFCF3;
+	--color-verde: #5BD048;
+	--color-rojo: #D04848;
+}
+/*
+h1{
+	font-family: 'Fredoka', sans-serif;
+}
+
+
+h2, h3, h4, h5, h6{
+	font-family: 'Familjen Grotesk', sans-serif;
+	
+}
+
+p {
+	font-family: 'Familjen Grotesk', sans-serif;
+}
+*/
 
 header {
 	padding-top: 0.5em;
@@ -19,16 +52,21 @@ header i{
 	font-size: 2em;
 }
 
+header h1 {
+	text-align: center;
+}
+
 footer {
 	 position: fixed;
   	bottom: 0;
   	width: 100%;
-	font-family: "Dubai";
+	font-family: 'Familjen Grotesk', sans-serif;
 	font-weight: 100;
 	background-color: black;
   text-align: center;
   font-size: 0.7em;
 }
+
 footer i {
   padding-top: 0.5em;
   font-size: 2em;
@@ -47,3 +85,658 @@ footer a{
 footer .col-3{
 	background-color: black;
 }
+
+/* DAVID CSS */
+
+
+.section {
+	padding: 1em 0px 4em 0px;
+}
+
+.fondoPrimario1 {
+	background-color: var(--color-primario1);
+}
+
+.fondoPrimario2 {
+	background-color: var(--color-primario2);
+}
+
+.fondoSecundario2{
+	background-color: var(--color-secundario2);
+}
+
+.fondoSecundario3 {
+	background-color: var(--color-secundario3);
+}
+
+.fondoInput {
+	background-color: var(--color-input);
+}
+
+.alignstart{
+	text-align: start;
+}
+
+.aligncenter{
+	text-align: center;
+}
+
+.alignend{
+	text-align: end;
+}
+
+/* Home */
+
+#hero .card.text-bg-dark {
+	border: none;
+}
+
+#hero .card-body {
+	color: var(--color-blanco);
+	height: 100%;
+}
+
+#hero .alignEnd {
+	text-align: end;
+}
+
+#hero.favoriteIcon {
+	font-size: 1.8em;
+}
+
+#hero img {
+	margin: 0.4em 0em 0.4em 0.4em;
+}
+
+#hero h2 {
+	font-size: 1em;
+	margin: 1em 0em;
+}
+
+/* FAVORITOS */
+
+#favoritos .card-body {
+	color: var(--color-blanco);
+	height: 100%;
+}
+
+#favoritos .alignEnd {
+	text-align: end;
+}
+
+#favoritos .favoriteIcon {
+	font-size: 1.8em;
+}
+
+#favoritos img {
+	margin: 0.4em 0em 0.4em 0.4em;
+}
+
+/* PERFIL */
+
+#perfil {
+	text-align: center;
+}
+
+#perfil img {
+	border-radius: 20em;
+}
+
+#perfil h2 {
+	padding-top: 0.5em;
+}
+
+#perfil input {
+	padding: 0.7em 0em 0.7em 1em;
+	margin-bottom: 0.5em;
+	border: none;
+	
+}
+
+#fusuario {
+	margin-top: 1em;
+}
+
+#fsalvar {
+	margin-top: 1em;
+	padding: 0.7em 5em 0.7em 5em !important;
+}
+
+#perfil input::placeholder {
+	color: var(--color-primario1);
+}
+
+#perfil .btn.btn-primary {
+	background-color: var(--color-secundario1);
+	color: var(--color-primario1);
+	border: none;
+	padding: 0.7em 1.6em 0.7em 1.6em !important;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+/*TARJETAS*/
+
+#tarjetas .card-body i {
+	text-align: end;
+	font-size: 2em;
+}
+
+#tarjetas .card-body {
+	color: var(--color-blanco);
+	height: 100%;
+}
+
+#tarjetas .alignEnd {
+	text-align: end;
+}
+
+#tarjetas .favoriteIcon {
+	font-size: 1.8em;
+}
+
+#tarjetas img {
+	margin: 0.4em 0em 0.4em 0.4em;
+}
+
+#tarjetas .displayInline {
+	display: inline-block;
+}
+
+#tarjetas a {
+	text-align: center;
+}
+
+
+/* AGREGAR TARJETAS */
+
+#agregar_tarjeta {
+	text-align: center;
+}
+
+#agregar_tarjeta p{
+	text-align: start;
+	padding-left: 0.4em;
+}
+
+#agregar_tarjeta input {
+	padding: 0.7em 0em 0.7em 1em;
+	margin-bottom: 0.5em;
+	border: none;
+	
+}
+
+#agregar_tarjeta input::placeholder {
+	color: var(--color-primario1);
+}
+
+#agregar_tarjetas_fdate {
+	padding-right: 1em!important;
+}
+
+#agregar_tarjetas_fsave {
+	margin-top: 1em;
+	padding: 0.7em 2em 0.7em 2em !important;
+}
+
+#agregar_tarjeta .btn.btn-primary.btn-sm{
+	background---color-primario2color: var(--color-secundario1);
+	color: var(--color-primario1);
+	border: none;
+	padding: 0.7em 1.5em 0.7em 1.5em !important;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/** GABRIELA CSS **/
+
+.categorias{
+	margin: 5%;
+}
+
+.cat-title{
+	text-align: left;
+	margin-top: 17%;
+	margin-bottom: 10%;
+	color: #FFFCF3;
+	font-size: 18px;
+}
+
+.anuncio{
+	margin: 4%
+}
+
+.anuncio-text{
+	text-align: left;
+	margin-top: 27%;
+	color: #FFFCF3;
+}
+.linea-prod{
+	margin:5%;
+	padding-top: 15px;
+}
+
+.card-nuevo{
+	margin-left:5%;
+	margin-right: 5%;
+	padding-top: 15px;
+}
+
+.linea{
+	margin: 2%;
+	padding-top: 5px;
+}
+
+.product-card{
+	margin:5%;
+}
+
+.prod-titulo{
+	font-size: 22px;
+	text-align:left;
+	margin-top: 95%;
+}
+
+h2{
+	font-size: 22px;
+}
+
+h3{
+	font-size: 20px;
+}
+
+h4{
+	font-size: 16px;
+}
+
+.CLOTHIFY{
+	font-size: 55px;
+	text-align:center;
+	margin-top: 90%;
+}
+
+.login-boton{
+	margin-top: 50%;
+	padding: 7px;
+	background-color:#0E131F;
+}
+
+.login-text{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 60%;
+}
+
+.login-form{
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:7%;
+}
+.btn-login{
+	background-color:#0E131F;
+	margin-top: 6%;
+}
+
+.pws{
+	background-color: #AFBBF2;
+}
+
+.tarjeta-camisa{
+	background-color: #0E131F;
+	padding: 3%;
+	
+}
+
+.camisa-text{
+	color: #FFFCF3;
+	margin-top:8%
+}
+
+.prod-boton{
+	background-color: #F96E46;
+	text-align: right;
+}
+
+/*KRISTHEL CSS*/
+
+.kristhel h1{
+	font-family: 'Fredoka', sans-serif;
+	 font-size: clamp(20px,4vw,60px);
+}
+
+.kristhel h2 {
+	font-size: clamp(16px,3vw,40px);
+}
+
+.kristhel h3 {
+	font-size: clamp(14px,3vw,40px);
+}
+
+
+.kristhel p {
+	font-size: clamp(12px,2.3vw,30px);
+	font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.kristhel .search-bar{
+	box-sizing: border-box;
+	min-width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.kristhel .input-box{
+	position: relative;
+	height: 8vw;
+	max-height: 67px;
+	max-width: 800px;
+	min-width: 100px;
+	width: 100%;
+	background: #AFBBF2;
+	margin: 18px 20px 30px 20px;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kristhel .input-box i, 
+.kristhel .input-box .button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%)
+	
+}
+
+.kristhel .input-box i {
+	padding: 0px;
+	font-size: 30px;
+	color: #3A4782;
+	
+}
+
+.kristhel .input-box input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	font-size: 18px;
+	font-weight: 400;
+	border: none;
+	padding: 0 150px 0 25px;
+	background-color: transparent;
+}
+
+.kristhel .input-box .button {
+	right: 15px;
+	color: #AFBBF2;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 6px;
+	background-color: transparent;
+}
+
+
+.kristhel .card-orden{
+	margin: 5%;
+	
+}
+
+.kristhel .card{
+	box-sizing: border-box;
+	flex-direction: row;
+	background:#ACD4E3;
+}
+
+.kristhel .card-img{
+	max-width: 30%;
+	margin: auto;
+	padding: 0.5em;
+
+}
+
+.kristhel .btn-x{
+	padding: 10px;
+	
+}
+
+.kristhel .btn-x i{
+	font-size: 3vw;
+	color: #fff;
+	background-color: #006992;
+	
+}
+
+.kristhel .text-section{
+	 position: absolute;              
+   top: 50%;                         
+   transform: translate(0, -50%)
+}
+
+.kristhel .timeline-steps {
+    display: flex;
+    justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+    box-sizing: border-box;
+	
+}
+
+.kristhel .timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:300px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+		
+        content: "";
+        display: block;
+        border-top: .25rem dotted #0E131F;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #0E131F;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.kristhel .timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center;
+	font-size: clamp(12px,2.3vw,30px);
+	
+}
+
+.kristhel .timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AFBBF2;
+}
+
+.kristhel .timeline-steps .timeline-content .inner-circle-big {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AFBBF2;
+}
+
+.kristhel .timeline-steps .timeline-content .inner-circle-big:before {
+    content: "";
+    background-color: #AFBBF2;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 5.25rem;
+    opacity: .5
+}
+
+.kristhel .Location{
+	margin-bottom: 30px;
+}
+
+.kristhel .mapa{
+	margin-bottom: 5%;
+}
+
+
+.kristhel .map {
+	display: block;
+	box-sizing: border-box;
+	border-radius: 1em;
+	width: 70%;
+	margin: auto;
+	border: 2px solid;
+	border-color: #0E131F;
+	
+}
+
+.kristhel .btn-map {
+	box-sizing: border-box;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 15px;
+	border: 1.5px solid;
+	border-color: #0E131F;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	 
+	
+}
+
+.kristhel .btns-location{
+	align-content: center;
+	padding-top: 20px;
+	padding-left: 5rem;
+	padding-bottom: 7rem;
+	
+}
+
+.kristhel .boton {
+	padding-bottom: 6.5em;
+}
+
+.kristhel .btn-ubicacion-one {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: 20px;
+	display: block;
+	background-color: #F96E46;
+	border: 0px;
+	border-radius: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-family: 'Familjen Grotesk', sans-serif;
+	font-size: clamp(18px,2.5vw,30px);
+	
+	
+}
+
+.kristhel .btn-ubicacion-two {
+	box-sizing: border-box;
+	margin-left: 20px;
+	margin-right: auto;
+	display: block;
+	background-color: #0E131F;
+	color: #fff;
+	border: 0px;
+	border-radius: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-family: 'Familjen Grotesk', sans-serif;
+	font-size: clamp(18px,2.5vw,30px);
+}
+
+.kristhel .btn-three{
+	padding: 1rem 0 7rem 0;
+
+}
+
+
+.kristhel .btn-ubicacion-three {
+	box-sizing: border-box;
+	margin-left: 20px;
+	margin-right: auto;
+	display: block;
+	background-color: #AFBBF2;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+    padding-right: 5vw;
+	padding-left: 5vw;
+	padding-bottom: 3vw;
+	padding-top: 3vw;
+	font-family: 'Familjen Grotesk', sans-serif;
+	font-size: clamp(18px,2.5vw,30px);
+}
+
+#location-btns{
+	align-content: center;
+}
+
+.kristhel .btn-location-three {
+	box-sizing: border-box;
+	background-color: #AFBBF2;
+	color: #fff;
+	border: none;
+	padding-right: 5vw;
+	padding-left: 5vw;
+	padding-bottom: 3vw;
+	padding-top: 3vw; 
+	border-radius: 10px;
+	font-family: 'Familjen Grotesk', sans-serif;
+	font-size: clamp(18px,2.5vw,30px);
+	margin-top: 2.2vw;
+	
+}
+
+.kristhel .camisas{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 7rem;
+	padding-top: 10px;
+	
+}
+	
+.kristhel .camisa{
+	width: 27vw;
+	height: 27vw;
+	border-radius: 13px;
+	margin: 0 20px 0 20px;
+	
+	
+}
+
+.kristhel a {
+	text-decoration: none;
+}
+
+
+
+
+
